@@ -137,3 +137,9 @@ dmypy.json
 Rubbish/
 #reports
 reports/
+
+#logs dir
+log/
+.log/
+logs/
+.logs/
