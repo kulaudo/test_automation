@@ -143,3 +143,6 @@ log/
 .log/
 logs/
 .logs/
+
+#pytest config
+pytest.ini
