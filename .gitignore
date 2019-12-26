@@ -146,3 +146,6 @@ logs/
 
 #pytest config
 pytest.ini
+
+#custom
+webdriver.ini
