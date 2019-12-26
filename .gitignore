@@ -149,3 +149,4 @@ pytest.ini
 
 #custom
 webdriver.ini
+page_objects/tests/
