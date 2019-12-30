@@ -7,16 +7,16 @@ class DriverService(containers.DeclarativeContainer):
 
     
     Chrome = providers.Factory(
-        ChromeDriverFactory(ChromeDriverConfig('../../../webdriver.ini')).create_driver)
+        ChromeDriverFactory(ChromeDriverConfig('webdriver.ini')).create_driver)
 
     Firefox = providers.Factory(
-        FirefoxDriverFactory(FirefoxDriverConfig('../../../webdriver.ini')).create_driver)
+        FirefoxDriverFactory(FirefoxDriverConfig('webdriver.ini')).create_driver)
 
     RemoteChrome = providers.Factory(RemoteChromeDriverFactory(
-        RemoteChromeDriverConfig('../../../webdriver.ini')).create_driver)
+        RemoteChromeDriverConfig('webdriver.ini')).create_driver)
 
     RemoteFirefox = providers.Factory(RemoteFirefoxDriverFactory(
-        RemoteFirefoxDriverConfig('../../../webdriver.ini')).create_driver)
+        RemoteFirefoxDriverConfig('webdriver.ini')).create_driver)
     # old
     # Firefox = providers.Factory(DriverFactory().firefox_driver)
     # ChromeHeadLess = providers.Factory(DriverFactory().chromeheadless_driver)

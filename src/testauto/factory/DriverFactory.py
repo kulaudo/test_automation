@@ -27,8 +27,7 @@ class RemoteWebDriverConfig(metaclass=abc.ABCMeta):
 
 
 class ChromeDriverConfig(WebDriverConfig):
-    def __init__(self, path):
-        
+    def __init__(self, path):        
         self.driver_config = configparser.ConfigParser()
         self.driver_config.read(path)
     
@@ -40,7 +39,7 @@ class FirefoxDriverConfig(WebDriverConfig):
     def __init__(self, path):
         self.driver_config = configparser.ConfigParser()
         self.driver_config.read(path)
-        
+
     def get_webdriver_executable_path(self):
         return self.driver_config['Firefox']['Path']
 
@@ -74,10 +73,10 @@ class RemoteFirefoxDriverConfig(RemoteWebDriverConfig):
         return self.remote_driver_config['Remote Default Firefox']['command_executor']
 
     def get_remote_webdriver_desired_capabilities(self):
-        capabilities = DesiredCapabilities.FIREFOX
-        #capabilities['platform'] = self.remote_driver_config['Remote Default Firefox']['platform']
-        #capabilities['version'] = self.remote_driver_config['Remote Default Firefox']['version']
-        #capabilities['browserName'] = self.remote_driver_config['Remote Default Firefox']['browserName']
+        capabilities = DesiredCapabilities.FIREFOX.copy()
+        capabilities['platform'] = self.remote_driver_config['Remote Default Firefox']['platform']
+        capabilities['version'] = self.remote_driver_config['Remote Default Firefox']['version']
+        capabilities['browserName'] = self.remote_driver_config['Remote Default Firefox']['browserName']
         return capabilities
 
 
