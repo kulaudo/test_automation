@@ -1,5 +1,5 @@
 import unittest
-from testauto.factory.DriverFactory import DriverService
+from factory.DriverFactory import DriverService
 from page_objects.page_objects import PageElement,PageObject,MultiPageElement
 import time
 import ddt

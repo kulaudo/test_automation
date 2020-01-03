@@ -1,6 +1,6 @@
 import dependency_injector.containers as containers
 import dependency_injector.providers as providers
-from testauto.factory.DriverFactory import DriverFactory, ChromeDriverFactory, ChromeDriverConfig, RemoteChromeDriverConfig, RemoteChromeDriverFactory, RemoteFirefoxDriverFactory, RemoteFirefoxDriverConfig, FirefoxDriverFactory,FirefoxDriverConfig
+from factory.DriverFactory import DriverFactory, ChromeDriverFactory, ChromeDriverConfig, RemoteChromeDriverConfig, RemoteChromeDriverFactory, RemoteFirefoxDriverFactory, RemoteFirefoxDriverConfig, FirefoxDriverFactory,FirefoxDriverConfig
 import os
 
 class DriverService(containers.DeclarativeContainer):

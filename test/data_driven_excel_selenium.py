@@ -6,11 +6,11 @@ import time
 import logging
 import traceback
 import ddt
-import testauto.ExcelUtil
+import ExcelUtil
 import sys
 import os
 import dependency_injector.errors
-from testauto.factory.DriverFactory import DriverService
+from factory.DriverFactory import DriverService
 
 
 logging.basicConfig(
@@ -22,7 +22,7 @@ logging.basicConfig(
 )
 excel_path = 'E:\\test_automation\\test\\test_data\\test_sheet.xlsx'
 sheet_name = 'search_data'
-excel = testauto.ExcelUtil.ParseExcel(excel_path, sheet_name)
+excel = ExcelUtil.ParseExcel(excel_path, sheet_name)
 
 
 @ddt.ddt 
