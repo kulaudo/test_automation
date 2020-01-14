@@ -1,5 +1,12 @@
 # 使用說明
 ----------
-test_automation是一個協助用來開發自動化測試的套件, 使用page-objects submodule
+test_automation used for help UI automation testing
 
-pip install page-objects
+<h1>requirenment
+  
+  page-object
+  
+  dependency-injector
+  
+ 
+
