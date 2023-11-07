@@ -1,3 +1,0 @@
-[submodule "page-objects"]
-	path = page_objects
-	url = https://github.com/eeaston/page-objects.git
